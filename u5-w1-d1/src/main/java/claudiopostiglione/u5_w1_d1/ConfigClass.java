@@ -16,17 +16,17 @@ public class ConfigClass {
     //Beans per i tipi Pizza
     @Bean
     public Pizza getMargherita() {
-        return new Pizza("Margherita", List.of("tomato", "cheese"), 4.99, 1104);
+        return new Pizza("Margherita", List.of("tomato", "cheese"), 4.99, 1104, true);
     }
 
     @Bean
     public Pizza getHawaiianPizza() {
-        return new Pizza("Hawaiian Pizza", List.of("tomato", "cheese", "ham", "pineapple"), 6.49, 1024);
+        return new Pizza("Hawaiian Pizza", List.of("tomato", "cheese", "ham", "pineapple"), 6.49, 1024,false);
     }
 
     @Bean
     public Pizza getSalamiPizza() {
-        return new Pizza("Salami", List.of("tomato", "cheese", "salami"), 5.99, 1160);
+        return new Pizza("Salami", List.of("tomato", "cheese", "salami"), 5.99, 1160,true);
     }
 
     //Beans per i tipi Toppings

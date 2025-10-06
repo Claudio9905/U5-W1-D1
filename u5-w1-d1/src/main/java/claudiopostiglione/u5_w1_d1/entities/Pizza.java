@@ -14,12 +14,20 @@ public class Pizza {
     private List<String> toppings;
     private double costo;
     private int calorie;
+    private boolean isXl;
 
 
     @Override
     public String toString() {
-        return
-                "| "+ nome + " (" + toppings + ")    " + " Costo: [" + costo + " €]   " + " Calorie: [" + calorie + "] "
-                ;
+
+        if (isXl) {
+            return
+                    "| " + nome + " (" + toppings + ")   " + " /XL: [Si] " + "  Costo: [" + costo + " €]   " + " Calorie: [" + calorie + "] "
+                    ;
+        } else {
+            return
+                    "| " + nome + " (" + toppings + ")   " + " /XL: [No] " + "  Costo: [" + costo + " €]   " + " Calorie: [" + calorie + "] "
+                    ;
+        }
     }
 }
