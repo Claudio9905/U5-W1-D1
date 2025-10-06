@@ -14,12 +14,17 @@ public class Menu {
     private List<Bevanda> bevande;
 
     public void stampaMenu(){
-        System.out.println("|-- Pizze ");
+        System.out.println("|-- Pizze --|");
         pizze.forEach(System.out::println);
-        System.out.println("|-- Toppings ");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("|-- Toppings --|");
         toppings.forEach(System.out::println);
-        System.out.println("|-- Bevande ");
+        System.out.println("-------------------------------------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("|-- Bevande --|");
         bevande.forEach(System.out::println);
+        System.out.println("-------------------------------------------------------------------------------------");
 
     }
 }
